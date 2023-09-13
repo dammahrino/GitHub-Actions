@@ -26,7 +26,7 @@ jobs:
     defaults:
       run:
         working-directory: resources/second-action-react-demo
-      steps:
+    steps:
       - name: Download repository code
         uses: actions/checkout@v3
       - name: Install NodeJS
