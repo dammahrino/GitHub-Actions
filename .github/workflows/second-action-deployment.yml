@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./resources/second-action-react-demo
+        working-directory: resources/second-action-react-demo
     steps:
       - name: Download repository code
         uses: actions/checkout@v3
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./resources/second-action-react-demo
+        working-directory: resources/second-action-react-demo
       steps:
       - name: Download repository code
         uses: actions/checkout@v3
