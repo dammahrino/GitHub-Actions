@@ -35,6 +35,34 @@ The following image is a general overview of the structure and the key elements 
 - Steps are executed in order.
 - Can be conditional.
 
+## Events (Workflow Triggers)
+
+There are several events that GitHub can listen to, to trigger workflows.
+
+### Repository related
+
+- push: pushing a commit
+- pull_request: pull request action (opened, closed, ...)
+- create: a branch or tag was created
+- fork: repository was forked
+- issues: an issue was opened, deleted, ...
+- issue_comment: issue or pull request comment action
+- watch: repository was starred
+- discussion: discussion action (created, deleted, ...)
+
+### Other
+
+- workflow_dispatch: manually trigger workflow
+- repository_dispatch: REST API request triggers workflow
+- schedule: workflow is scheduled
+- workflow_call: can be called by other workflows
+
+For more information, visit [GitHub Actions Events that trigger Workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
+
+## Actions
+
+A (custom) application that performs a (typically complex) frequently repeated task. The simpler equivalent (in most cases) would be using the `run` command. These actions can be built on your own but official and community options are also available.
+
 ## Definitions
 
 <dl>
