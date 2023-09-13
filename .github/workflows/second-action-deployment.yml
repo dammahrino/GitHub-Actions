@@ -7,6 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    # Due to the nature of the repository structure, this is required
     defaults:
       run:
         working-directory: resources/second-action-react-demo
@@ -22,7 +23,10 @@ jobs:
       - name: Run tests
         run: npm test
   deploy:
+    # Specifying which jobs need to be completed before starting this one
+    needs: test
     runs-on: ubuntu-latest
+    # Due to the nature of the repository structure, this is required
     defaults:
       run:
         working-directory: resources/second-action-react-demo
