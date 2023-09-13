@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Download repository code
         uses: actions/checkout@v3
+      - name: List directories
+        run: ls -la
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with:
